@@ -35,7 +35,7 @@
         z-index: 1;
       }
       &:nth-child(2) {
-        animation: qrcodeAnima2 0.5s ease infinite;
+        animation: qrcodeAnima2 1.2s ease infinite;
       }
       @keyframes qrcodeAnima2 {
         form {
@@ -50,11 +50,12 @@
   }
 }
 .bili {
-  height: calc(60px + constant(safe-area-inset-bottom));
-  height: calc(60px + env(safe-area-inset-bottom));
   .desc {
-    position: sticky;
+    position: fixed;
     top: 0;
+    // width: 100%;
+    left: 0;
+    right: 0;
     padding: 0 2vw;
     background-color: rgb(252, 246, 246);
     font-weight: 400;
@@ -65,6 +66,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 7.2vw;
     a,.item{
       display: block;
       width:46vw;
@@ -100,5 +102,14 @@
     }
   }
 }
+}
+
+.shipei {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: constant(safe-area-inset-bottom);
+  height: env(safe-area-inset-bottom);
+  background-color: #fff;
 }
 

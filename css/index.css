@@ -31,7 +31,7 @@
   z-index: 1;
 }
 .qr-code .content img:nth-child(2) {
-  animation: qrcodeAnima2 0.5s ease infinite;
+  animation: qrcodeAnima2 1.2s ease infinite;
 }
 @keyframes qrcodeAnima2 {
   form {
@@ -41,13 +41,11 @@
     z-index: 2;
   }
 }
-.bili {
-  height: calc(60px + constant(safe-area-inset-bottom));
-  height: calc(60px + env(safe-area-inset-bottom));
-}
 .bili .desc {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   padding: 0 2vw;
   background-color: #fcf6f6;
   font-weight: 400;
@@ -58,6 +56,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 7.2vw;
 }
 .bili .content a,
 .bili .content .item {
@@ -89,4 +88,12 @@
     width: 248px;
     height: 248px;
   }
+}
+.shipei {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: constant(safe-area-inset-bottom);
+  height: env(safe-area-inset-bottom);
+  background-color: #fff;
 }
