@@ -43,6 +43,7 @@
 }
 .bili .desc {
   position: fixed;
+  z-index: 9999;
   top: 0;
   left: 0;
   right: 0;
@@ -85,6 +86,7 @@
   border-radius: 0 0 10px 10px;
   padding-left: 8.3333vw;
   color: #fff;
+  font-size: 3.8333vw;
 }
 .bili .content a .cover .play,
 .bili .content .item .cover .play {
