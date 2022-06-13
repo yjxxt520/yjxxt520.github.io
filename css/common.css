@@ -1,0 +1,8 @@
+.eli {
+  /* 一行或多行文本超出用省略号显示
+具体想要多少行,设置-webkit-line-clamp的值即可 */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

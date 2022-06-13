@@ -1,0 +1,102 @@
+.wrapper {
+  margin: 0 2vw;
+}
+
+
+.qr-code {
+  position: fixed;
+  z-index: 9999;
+  // top:7vw;
+  bottom: 20vw;
+  right:8px;
+  width: 141px;
+  height:170px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(46, 41, 41, 0.6);
+  color:#fff;
+  border-radius: 10px;;
+  .contain {
+    p {
+      height: 18px;
+      line-height: 18px;
+      font-size:10px;
+    }
+  }
+  .content {
+    img{
+      position: absolute;
+      width: 124px;
+      height:124px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      &:nth-child(1) {
+        z-index: 1;
+      }
+      &:nth-child(2) {
+        animation: qrcodeAnima2 0.5s ease infinite;
+      }
+      @keyframes qrcodeAnima2 {
+        form {
+          z-index: 0;
+        }
+        
+        to {
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+.bili {
+  .desc {
+    position: sticky;
+    top: 0;
+    padding: 0 2vw;
+    background-color: rgb(252, 246, 246);
+    font-weight: 400;
+    font-size: 5.3333vw;
+    border-bottom: 1px solid rgba(61, 53, 53,.5);
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a,.item{
+      display: block;
+      width:46vw;
+      margin-top: 10px;
+      font-size: 2.6667vw;
+      overflow: hidden;
+      color:#000;
+      img {
+        width:46vw;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media  (min-width:1000px) {
+  .qr-code {
+    top:7.5vw;
+    right:8px;
+    width: 282px;
+    height:334px;
+    .contain {
+      p {
+        height: 32px;
+        line-height: 32px;
+        font-size: 22px;
+      }
+    }
+    .content {
+      img{
+        width: 248px;
+        height:248px;
+    }
+  }
+}
+}
+
