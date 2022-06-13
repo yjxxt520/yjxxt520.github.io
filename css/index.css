@@ -41,6 +41,10 @@
     z-index: 2;
   }
 }
+.bili {
+  height: calc(60px + constant(safe-area-inset-bottom));
+  height: calc(60px + env(safe-area-inset-bottom));
+}
 .bili .desc {
   position: sticky;
   top: 0;
